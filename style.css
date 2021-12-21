@@ -9,7 +9,9 @@ hsl(43, 84%, 65%) */
 body{
     /* background-color: hsl(226, 43%, 10%) ; */
     place-items: center;
+    font-family: 'Rubik', sans-serif;
 }
+
 .container{
     display: grid;
         /* grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -18,7 +20,7 @@ body{
     place-items: center;
     /* width: auto;
     height: 750px; */
-    gap: 10px;
+    gap: 5px;
 }
 
 .card1{
@@ -29,37 +31,75 @@ body{
     background-color: hsl(235, 46%, 20%);
     width: auto;
     height: 520px;
+    
+    min-height: 520px;
+    max-height: 520px;
+
+    min-width: 250px;
+    max-width: 250px;
+
     border-radius: 8px;
 }
 
 .detail-user{
     background-color: hsl(235, 45%, 61%);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10%;
     border-radius: 8px;
+    color: hsl(236, 100%, 87%);
+}
 
+.user-profile{
+    height: 60px;
+    width: 60px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-bottom: 20px;
 }
 
 .periodic{
-    color: hsl(235, 45%, 61%);
+    display: flex;
+    flex-direction: column;
     font-weight: bold;
+    padding: 10%;
 }
 
+.periodic-monthly,
+.periodic-weekly,
+.periodic-daily{
+    color: hsl(235, 45%, 61%);
+    padding: 10px;
+}
+
+.periodic-monthly:hover,
+.periodic-weekly:hover,
+.periodic-daily:hover{
+    color: hsl(236, 100%, 87%);
+    padding: 10px;
+}
 
 .card2{
     grid-column: 2;
     grid-row: 1;
     background-color: hsl(235, 46%, 20%);
 
-    width: auto;
+    /* width: auto;
     height: 250px;
+    max-width: 460px; */
+
+    width: 250px;
     max-width: 460px;
+    height: 250px;
+    max-height: 250px;
 
     border-radius: 8px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
+
 .icon-work{
     grid-row: 1;
     background-color: hsl(15, 100%, 70%) ;
@@ -86,10 +126,12 @@ body{
     background-color: gray;
     grid-row: 2/6;
     display: flex;
-        justify-content: center;
-        align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
 
     max-height: 170px;
+    padding: 5%;
 }
 
 .card3{
@@ -97,9 +139,14 @@ body{
     grid-row: 1;
     background-color: hsl(235, 46%, 20%);
 
-    width: auto;
+    /* width: auto;
     height: 250px;
+    max-width: 460px; */
+
+    width: 250px;
     max-width: 460px;
+    height: 250px;
+    max-height: 250px;
 
     border-radius: 8px;
     display: grid;
@@ -107,6 +154,7 @@ body{
 
 
 }
+
 .icon-play{
     grid-row: 1;
     background-color: hsl(195, 74%, 62%) ;
@@ -120,20 +168,25 @@ body{
     /* background-position: 7px 12px ;  */
 }
 
-
 .card4{
     grid-column: 4;
     grid-row: 1;
     background-color: hsl(235, 46%, 20%);
     
-    width: auto;
+    /* width: auto;
     height: 250px;
+    max-width: 460px; */
+
+    width: 250px;
     max-width: 460px;
+    height: 250px;
+    max-height: 250px;
 
     border-radius: 8px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
+
 .icon-study{
     grid-row: 1;
     background-color: hsl(348, 100%, 68%) ;
@@ -152,14 +205,20 @@ body{
     grid-row: 2;
     background-color: hsl(235, 46%, 20%);
     
-    width: auto;
+    /* width: auto;
     height: 250px;
+    max-width: 460px; */
+
+    width: 250px;
     max-width: 460px;
+    height: 250px;
+    max-height: 250px;
 
     border-radius: 8px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
+
 .icon-exercise{
     grid-row: 1;
     background-color:hsl(145, 58%, 55%);
@@ -178,14 +237,19 @@ body{
     grid-row: 2;
     background-color: hsl(235, 46%, 20%);
     
-    width: auto;
+    /* width: auto;
     height: 250px;
+    max-width: 460px; */
+    width: 250px;
     max-width: 460px;
+    height: 250px;
+    max-height: 250px;
 
     border-radius: 8px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
+
 .icon-social{
     grid-row: 1;
     background-color: hsl(264, 64%, 52%) ;
@@ -204,9 +268,13 @@ body{
     grid-row: 2;
     background-color: hsl(235, 46%, 20%);
     
-    width: auto;
+    /* width: auto;
     height: 250px;
+    max-width: 460px; */
+    width: 250px;
     max-width: 460px;
+    height: 250px;
+    max-height: 250px;
 
     border-radius: 8px;
     display: grid;
