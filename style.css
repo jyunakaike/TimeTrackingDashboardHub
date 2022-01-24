@@ -7,9 +7,7 @@ body{
     display: grid;
     place-items: center;
     gap: 10px;
-    padding-right: 20%;
-    padding-left: 20%;
-    padding-top: 10%;
+    padding: 10% 20% 0 20% ;
 }
 
 .card1{
@@ -20,7 +18,7 @@ body{
     background-color: hsl(235, 46%, 20%);
     width: auto;
     height: 520px;
-    min-height: 520px;
+    /* min-height: 520px; */
     max-height: 520px;
     min-width: 250px;
     max-width: 250px;
@@ -113,7 +111,7 @@ body{
     align-items: flex-start;
     flex-direction: column;
 
-    max-height: 170px;
+    /* max-height: 170px; */
     padding: 5%;
     margin-top: -20px;
 
@@ -247,3 +245,88 @@ body{
     max-height: 80px;
 }
 
+@media (max-width: 375px) {
+    .container{
+        display: grid;
+            grid-template-columns: 1fr;
+            /* grid-template-rows: 1fr ; */
+        /* grid-gap: 10px; */
+        padding: 0;
+
+    }
+
+    .card1{
+        display: grid;
+        grid-column: 1;
+        grid-row: 1;
+        background-color: hsl(235, 46%, 20%);
+        width: auto;
+        height: 250px;
+    }
+
+    .detail-user{
+        background-color: hsl(235, 45%, 61%);
+        display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        padding: 10%;
+        border-radius: 8px;
+        color: white;
+        height: 110px;
+
+    }
+    .detail-user > p, h1{
+        font-size: 1rem;
+    } 
+    .periodic{
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+        padding: 10%;
+    }
+
+    .detail-self,
+    .detail-social,
+    .detail-excercise,
+    .detail-study,
+    .detail-play,
+    .detail-work{
+    border-radius: 8px;
+    background-color: hsl(235, 46%, 20%);
+    /* grid-row: 2/6; */
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    padding: 5%;
+    margin-top: -20px;
+    color:white;
+    }
+    .card2{
+        grid-column: 1;
+        grid-row:2;
+    }
+    .card3{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .card4{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .card5{
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .card6{
+        grid-column: 1;
+        grid-row: 6;
+
+    }
+
+    .card7{
+        grid-column: 1;
+        grid-row: 7;
+    }
+}
